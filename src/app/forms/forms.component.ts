@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SelectItem} from 'primeng/primeng';
 
 @Component({
   selector: 'app-forms',
@@ -55,5 +56,18 @@ export class FormsComponent implements OnInit {
       this.multipleResults = this.rawResults;
     }
   }
+
+  // multi-select
+
+  cities: SelectItem[] = [
+    {label:'New York', value:'New York'},
+    {label:'Rome', value:'Rome'},
+    {label:'London', value:'London'},
+    {label:'Istanbul', value:'Istanbul'},
+    {label:'Paris', value:'Paris'}
+  ];
+
+  selectedCities: string[] = [];
+
 
 }

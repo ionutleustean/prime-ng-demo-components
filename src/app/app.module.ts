@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 
 // ng modules
-import {AutoCompleteModule, InputTextareaModule, InputTextModule} from 'primeng/primeng';
+import {AutoCompleteModule, InputTextareaModule, InputTextModule, MultiSelectModule} from 'primeng/primeng';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import {AutoCompleteModule, InputTextareaModule, InputTextModule} from 'primeng/
     HttpModule,
     InputTextModule,
     InputTextareaModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    MultiSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
