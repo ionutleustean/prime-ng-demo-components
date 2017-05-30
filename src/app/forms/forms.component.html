@@ -27,6 +27,12 @@
 
 
 <div class="card auto-complete">
+  <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" placeholder="Name"></p-autoComplete>
+  <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)"
+                  [dropdown]="true" (onDropdownClick)="handleDropdown($event)" placeholder="Name"></p-autoComplete>
 
+  <p-autoComplete [(ngModel)]="multipleText" [suggestions]="multipleResults" (completeMethod)="searchMultiple($event)"
+                  [minLength]="1" placeholder="Name" [multiple]="true">
+  </p-autoComplete>
 
 </div>
